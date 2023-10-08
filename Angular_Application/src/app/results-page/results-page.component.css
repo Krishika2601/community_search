@@ -1,0 +1,22 @@
+html { background-color: black; }
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body div {
+    width: 100vw;
+    height: 100vh;
+    background: red;
+  }
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./bg-5-full-1.jpg');
+  text-decoration-color: antiquewhite;
+  color: aliceblue;
+}

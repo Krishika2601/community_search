@@ -1,0 +1,59 @@
+
+<div class="main">
+    <br>
+    <br>
+    <h3 style="text-align: center; color: white;">Results Based on your search</h3>
+    <br>
+    <div class="text-align:center">
+  
+    
+    <head>
+      
+     
+      <style>
+      #mytable input{
+      width:100%;
+      color: azure;
+     border-width: 5px;
+     border-top: 20px;
+      }
+     </style>
+     
+      </head>
+         <div class="container" style="text-align: center">
+              
+                <table id="mytable" class="table table-bordered">
+        
+              <tr>
+                  <td style="width: 20%;color: antiquewhite;">Product Name:</td>
+                  <td style="width: 20%;color: antiquewhite;">Brand:</td>
+                
+                  <td  style="width: 20%;color: antiquewhite;">Rating:</td>
+                  <td  style="width: 20%;color: antiquewhite;">Review:</td>
+                  
+              </tr>
+              
+                <tr  *ngFor="let user of review">
+          
+                    <td style="color: rgb(221, 221, 231);">
+                       {{user.product }}</td>
+                     <td style="color: rgb(187, 187, 205);">
+                       {{ user.brand }}</td>
+                     
+                         <td style="color: rgb(202, 202, 225);">
+                            {{ user.rating }}</td>
+                            <td style="color: rgb(202, 202, 225);">
+                                {{ user.review }}</td>
+                         
+                 </tr>
+              
+             
+             
+    
+          </table>
+          
+      </div>
+      
+      
+    </div>
+    </div>

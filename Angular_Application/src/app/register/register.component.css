@@ -1,0 +1,21 @@
+.Style{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+
+lable{
+        color: rgb(10, 9, 9);
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./tgip_overview2_banner_desktop_1920x1080.jpg);
+    }

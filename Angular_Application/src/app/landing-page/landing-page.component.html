@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-dark" style="background-color:black ;">
+  <div class="container">
+    <span class="navbar-brand mb-0 h1 " style="color: white;">Hi {{this.username}} </span>
+  <a class="nav-link" href="/homepage" style="text-align:right ; color:aliceblue ;margin-left: 80%;">LogOut</a>
+    
+  </div>
+</nav>
+<div>
+ 
+      <div class="main">
+       
+        {{Userfunction()}}
+        <div class="container"style="margin: auto;
+        width: 50%;
+      
+        padding: 10px;">
+          <div class="col-md-16">
+              <div class="Style">
+                  <div class="text-center">
+                   
+                  </div>               
+                      <form  [formGroup]="landingPage" (ngSubmit)="Submit()">
+                       <div class="row no-gutters">
+                         <div class="col-md-10 "style="width: 80%;">
+                          <input formControlName="search" type="text" class="form-control" id="seach" placeholder="Search for Product"><br>
+                         </div>
+                         <div class="col-6 col-md-4" style="width: 20%;">
+                          <button type="submit" class="btn btn-primary">search</button>
+                        
+                         </div>
+                       </div>
+                         
+
+                        </form>  
+                      
+              </div>
+          </div>
+      </div>
+  </div>
+   
+</div>

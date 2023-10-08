@@ -1,0 +1,15 @@
+.Style {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    
+    
+  }
+  
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./WIP9001_DESIGN-05.webp);
+}
+

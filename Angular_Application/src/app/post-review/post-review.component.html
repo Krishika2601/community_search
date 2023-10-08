@@ -1,0 +1,79 @@
+<div class="main">
+  <div class="container"style="margin: auto;
+  width: 50%;
+
+  padding: 10px;">
+    <div class="container" >
+      <div class="col-md-12">
+        <div class="Style">
+          <div class="text-center" style="color: white;">
+            <h3>Review</h3>
+            <br>
+            <br>
+            <hr>
+          </div>
+          <form [formGroup]="reviewForm" (ngSubmit)="review()">
+            <div class="col mb-3">
+              <div class="form-group">
+                <label for="formControlRange" style="color: white;">Rating</label>
+                <input
+                  formControlName="rating"
+                  type="range"
+                  class="form-control-range"
+                  id="formControlRange"
+                  min="0" max="5" 
+                  onChange="document.getElementById('rangeval').innerText = document.getElementById('formControlRange').value">
+                  <span id="rangeval" style="margin-left:300px;color: white;">5<!-- Default value --></span>
+            
+              </div>
+            </div>
+            
+            <div class="col mb-3">
+              <div class="form-group">
+                <label for="ExampleInput2" style="color: white;">Product Name</label>
+                <input
+                formControlName="product"
+                type="text"
+                class="form-control"
+                id="ExampleInput2"
+                placeholder="product"
+                required
+              />
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="form-group">
+                <label for="ExampleInput2" style="color: white;">Brand</label>
+                <input
+                  formControlName="brand"
+                  type="text"
+                  class="form-control"
+                  id="ExampleInput2"
+                  placeholder="Brand"
+                  required
+                />
+              </div>
+              </div>
+            <div class="col mb-3">
+              <div class="form-group">
+                <label for="ExampleInput2" style="color: white;">Review</label>
+                <input
+                formControlName="review"
+                  type="text"
+                  class="form-control"
+                  id="ExampleInput2"
+                  placeholder="review about product"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

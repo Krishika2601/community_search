@@ -1,0 +1,105 @@
+<div class="main">
+    <br>
+    <h1 style="color: white;">&nbsp;&nbsp;Admin Portal</h1>
+   
+   <div class="container" style="margin: auto;
+   width: 50%;
+ 
+   padding: 10px;">
+      <div class="col-md-9">
+        <div class="Style">
+          <div class="text-center">
+            <h5 style="color: white;">Only Admin can Access:</h5>
+            <br>
+          </div>
+          <form [formGroup]="adminForm" (ngSubmit)="admin()">
+            <div class="mb-3">
+                <label
+                  for="exampleInputEmail1"
+                  style="color: white"
+                  class="form-label"
+                >ID:</label>
+                <input
+                  formControlName="id"
+                  type="number"
+                  class="form-control"
+                  style="background: white"
+                  id="id"
+                  
+                  placeholder="Id"
+                  required
+                /><br />
+              </div>
+            <div class="mb-3">
+              <label
+                for="exampleInputEmail1"
+                style="color:white"
+                class="form-label"
+              >ProductName</label>
+              <input
+                formControlName="name"
+                type="text"
+                class="form-control"
+                style="background: white"
+                id="name"
+                
+                placeholder="Product name"
+                required
+              /><br />
+            </div>
+  
+            <div class="row">
+              <div class="col mb-3">
+                <label style="color:white" class="form-label"> ProductCode</label>
+                <input
+                  formControlName="productcode"
+                  type="text"
+                  class="form-control"
+                  style="background: white"
+                  id="code"
+                  
+                  placeholder="Product code"
+                  required
+                /><br />
+              </div>
+              <div class="row">
+                <div class="col mb-3">
+                  <label style="color: white" class="form-label">Brand</label>
+                  <input
+                    formControlName="brand"
+                    type="text"
+                    class="form-control"
+                    style="background: white"
+                    id="brand"
+                    
+                    placeholder="BrandName"
+                    required
+                  /><br />
+                </div>
+            </div>
+            <div style="text-align: center">
+              <button
+                type="submit"
+                style="
+                  background-color: black;
+                  height: 40px;
+                  width: 160px;
+  
+                  border-radius: 40px;
+                "
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </div>
+           </div>
+          </form>
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+   
+    
+

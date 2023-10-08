@@ -1,0 +1,46 @@
+
+
+<div class="main" >
+    <div class="container"style="margin: auto;
+    width: 50%;
+  
+    padding: 10px;">
+      <div class="container" >
+            <div class="col-md-12">
+                <div class="Style">
+                    <div class="text-center">
+                      <br>
+                      <br>
+                    </div>               
+                        <form   [formGroup]="LoginForm" (ngSubmit)="login()">
+                            <h1 style="text-align: center ;">User Login</h1>
+                            <br>
+                            <h6>Please enter email & password:</h6>
+                            
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" style="color: rgb(242, 235, 235);" class="form-label">Email</label>
+                              <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br>
+                              
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" style="color: rgb(242, 231, 231);" class="form-label">Password</label>
+                              <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1"><br>
+                              
+                            </div>
+                            <button type="submit" class="btn btn-primary bi-box-arrow-in-right" style="background-color:rgb(2, 14, 25)  ;width: 140px;"> &nbsp;&nbsp;Login</button>
+                            <button routerLink="/homepage" type="submit" class="btn btn-secondary mx-3 bi-backspace-reverse"  style=" background-color:rgb(2, 14, 24)  ;width: 140px;">&nbsp;&nbsp;Back</button>
+                          </form>  
+                          <br>
+                          <h5 class="bi bi-person-check">
+                            <a style=" text-align:right;color: rgb(212, 199, 199); margin-top: 10px;" routerLink="/register">
+                                New User? Click to Registration!!
+                            </a> 
+                                        
+                          </h5>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</div>

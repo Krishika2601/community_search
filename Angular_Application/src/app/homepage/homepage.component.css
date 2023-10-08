@@ -1,0 +1,53 @@
+
+
+.counter-box {
+	display: block;
+
+	padding: 40px 20px 37px;
+	text-align: center;
+    margin-top: 30%;
+    
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+    margin-top: 30%;
+ 
+	
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+    margin-top: 30%;
+   
+}
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+    margin-top: 30%;
+ 
+	
+	line-height: 28px
+}
+
+.counter-box.colored {
+    margin-top: 30%;
+     
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+  .main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./607ee530dd599174b3108b8f_5c6a7f6880da2a81406e3cb1_pozadi_2.jpg);
+  }

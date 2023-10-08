@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    }
+    th, td {
+    padding: 5px;
+    text-align: center;
+    }
+
+    .main{
+        width: 100vw;
+        height: 100vh;
+       background-image: url(./e271fda72f1e158b5f0569cc72d36d7f.jpg);
+    }
+    .h4{
+        font-weight: bold;
+        font-weight: 900;
+    }

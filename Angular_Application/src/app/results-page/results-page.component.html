@@ -1,0 +1,51 @@
+<div class="main">
+<br>
+<br>
+<h3 style="text-align: center;">Results Based on your search</h3>
+<br>
+<div class="text-align:center">
+{{filter()}}
+
+<head>
+  
+ 
+  <style>
+  #mytable input{
+  width:100%;
+  color: azure;
+  }
+ </style>
+ 
+  </head>
+     <div class="container" style="text-align: center">
+          
+            <table id="mytable" class="table table-bordered">
+    
+          <tr>
+              <td style="width: 20%;color: antiquewhite;">Product Name:</td>
+              <td style="width: 20%;color: antiquewhite;">Brand:</td>
+              <td style="width: 20%;color: antiquewhite;">Code:</td>
+              
+          </tr>
+          <tr  *ngFor="let user of filteredUsers">
+          
+             <td style="color: rgb(221, 221, 231);">
+                {{user.name }}</td>
+              <td style="color: rgb(187, 187, 205);">
+                {{ user.brand }}</td>
+                <td style="color: rgb(202, 202, 225);">
+                  {{ user.productcode }}</td>
+          </tr>
+         
+
+      </table>
+      
+  </div>
+  
+    <div style="text-align: center; ">
+    <br>
+    <br>
+  <button routerLink="/post-review" type="submit" style="background-color: rgb(41, 40, 57);height: 57px;width: 157px;border-radius: 40px;" class="btn btn-secondary ">Review</button>
+  </div>
+</div>
+</div>

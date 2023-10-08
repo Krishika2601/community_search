@@ -1,0 +1,126 @@
+
+
+<div class="main">
+  <br>
+  <h1 style="color: white;">&nbsp;&nbsp;Registration</h1>
+  <div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="Style">
+        <div class="text-center">
+          <h6 style="color: white;">Register with your email and password:</h6>
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+          <div class="mb-3">
+            <label
+              for="exampleInputEmail1"
+              style="color: rgb(21, 19, 19)"
+              class="form-label"
+            ></label>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              style="background: #ffffff; color: rgb(21, 19, 19)"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email*"
+              required
+            /><br />
+          </div>
+
+          <div class="row">
+            <div class="col mb-3">
+              <label style="color: rgb(28, 20, 20)" class="form-label"></label>
+              <input
+                formControlName="firstname"
+                type="text"
+                class="form-control"
+                style="background: rgb(239, 238, 238)"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="First name"
+                required
+              /><br />
+            </div>
+            <div class="col mb-3">
+              <label style="color: rgb(28, 20, 20)" class="form-label"></label>
+              <input
+                formControlName="lastname"
+                type="text"
+                class="form-control"
+                style="background: rgb(239, 238, 238)"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Last name"
+                required
+              /><br />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label
+                for="exampleInputPassword1"
+                style="color: rgb(21, 19, 19)"
+                class="form-label"
+              ></label>
+              <input
+                formControlName="password"
+                type="password"
+                class="form-control"
+                style="background: rgb(239, 238, 238)"
+                id="exampleInputpassword1"
+                placeholder="password*"
+                required
+              /><br />
+            </div>
+
+            <div class="col mb-3">
+              <label
+                for="exampleInputPassword1"
+                style="color: rgb(21, 19, 19)"
+                class="form-label"
+              ></label>
+              <input
+                formControlName="confirmPassword"
+                type="password"
+                class="form-control"
+                style="background: rgb(239, 238, 238)"
+                id="exampleInputPassword1"
+                placeholder="confirm password*"
+                required
+              /><br />
+            </div>
+          </div>
+          <div style="text-align: center">
+            <button
+              type="submit"
+              style="
+                background-color: black;
+                height: 40px;
+                width: 160px;
+
+                border-radius: 40px;
+              "
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+         
+        </form>
+        <div style="text-align: right">
+  
+          <a style="color: rgb(11, 7, 7)" routerLink="/login"
+            >Have an account already?
+          </a>
+       
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ 
+  </div>
+
